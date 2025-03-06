@@ -4,49 +4,59 @@
 
 let score = "33abc";
 
-console.log(typeof(score));
+// console.log(typeof(score));
 
 let new_score = Number(score);
-console.log(typeof(new_score));
-console.log(new_score);
+// console.log(typeof(new_score));
+// console.log(new_score);
 
-console.log("--------------------------------");
+// console.log("--------------------------------");
 
 let hello = null;
 
-console.log(typeof(hello));
+// console.log(typeof(hello));
 
 let new_hello = Number(hello);
-console.log(typeof(new_hello));
-console.log(new_hello);
+// console.log(typeof(new_hello));
+// console.log(new_hello);
 
-console.log("--------------------------------");
+// console.log("--------------------------------");
 
 let bus = undefined;
 
-console.log(typeof(bus));
+// console.log(typeof(bus));
 
 let new_bus = Number(bus);
-console.log(typeof(new_bus));
-console.log(new_bus);
+// console.log(typeof(new_bus));
+// console.log(new_bus);
 
 /* "33" => 33 
     "33abc" => NaN
     null => 0
     true => 1; false => 0
 */
-console.log("--------------------------------");
+// console.log("--------------------------------");
 
 
 let isLoggedIn = 1;
 let booleanIsLoggedIn = Boolean(isLoggedIn);
 
-console.log(booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);
 
 /* 1 => true
     "" => false
     "dhruvin" => true
 */
 console.log("--------------------------------");
+// console.log("--------------------------------");
 
 
+// ***********************Operations ***********************
+let value = 3;
+let negValue = -value;
+// console.log(negValue);
+
+console.log(1 + "2");
+console.log("1" + 2);
+console.log("1" + 2 + 2);  // if string is first then whole conversion will be treated as a string
+// console.log(1 + 2 + "2");  // if number is first then everything will be treated as a number
