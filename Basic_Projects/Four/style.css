@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.main {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: grey;
+}
+.main h1 {
+  padding: 10px 0px;
+  background-color: black;
+  color: white;
+  width: 100vw;
+}
+h2 {
+  font-size: 20px;
+  color: white;
+  font-weight: 400;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+h3 {
+  font-size: 60px;
+  color: white;
+  font-weight: 600;
+  padding: 40px 0px;
+}
+#submit {
+  padding: 10px 10px;
+  font-size: 14px;
+  margin: 5px;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 15px;
+  margin: 30px 0px;
+}
+#guess {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.69);
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  cursor: pointer;
+  border-radius: 15px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.result {
+  font-size: 20px;
+}
