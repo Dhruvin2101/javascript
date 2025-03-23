@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      #main {
+        height: 300px;
+        width: 200px;
+        background-color: #121212;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      #profile {
+        height: 100px;
+        width: 100px;
+        margin-bottom: 25px;
+      }
+      #user {
+        color: white;
+      }
+    </style>
+    <div id="main">
+      <img id="profile" src="" />
+      <h5 id="user"></h5>
+    </div>https://github.com/Dhruvin2101/javascript.git
+  </body>
+  <script>
+    const reqLink = "https://api.github.com/users/Dhruvin2101";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", reqLink);
+    //-------
+    xhr.onreadystatechange = function () {
+      console.log(xhr.readyState);
+      if (xhr.readyState == 4) {
+        const data = JSON.parse(this.responseText);
+        document.getElementById("user").innerText = data.login;
+        document.getElementById("profile").src = data.avatar_url;
+      }
+    };
+    xhr.send();
+  </script>
+</html>
